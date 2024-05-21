@@ -1,9 +1,19 @@
+import { useEffect, useState } from 'react';
 import { Grid, GridItem, Stack } from '@chakra-ui/react';
-import CardSelectorContainer from './components/CardSelectorContainer';
-import SelectedViewerContainer from './components/SelectedViewerContainer';
 import "destyle.css";
 
+import CardSelectorContainer from './components/CardSelectorContainer';
+import SelectedViewerContainer from './components/SelectedViewerContainer';
+
+import data from "./data.json";
+
 function App() {
+  const [dataJson, setDataJson] = useState();
+
+  useEffect(() => {
+    setDataJson(data);
+  }, [])
+
   return (
     <Grid
       className="App"
