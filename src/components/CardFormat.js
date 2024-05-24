@@ -1,6 +1,6 @@
 import { Application, Container, Graphics, Matrix, Text, Texture, Sprite } from 'pixi.js';
 import { useEffect, useState } from 'react';
-import { Box, Button, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react';
+import { Box, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react';
 
 import bgImage from "../deckImage/bgImage_gray.png";
 import frameImage from "../deckImage/frameImage.png";
@@ -505,7 +505,7 @@ export default function DeckImage({cardJson, pertnerIndex, caseIndex, deckIndexe
         <ModalOverlay />
         <ModalContent minW="80vw" >
           <ModalBody >
-            <Image alt='preview' src={dataURL} />
+            <img alt='preview' src={dataURL} />
           </ModalBody>
         </ModalContent>
       </Modal>
