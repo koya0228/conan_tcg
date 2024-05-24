@@ -1,33 +1,53 @@
-import { useEffect, useState } from 'react';
+import { createContext, useState } from 'react';
 import { Grid, GridItem, Stack } from '@chakra-ui/react';
 import "destyle.css";
+import "./style.css";
 
 import CardSelectorContainer from './components/CardSelectorContainer';
 import SelectedViewerContainer from './components/SelectedViewerContainer';
 
 import data from "./data.json";
+import Header from './components/Header';
+export const cardsDataJson = createContext(data);
 
 function App() {
-  const [dataJson, setDataJson] = useState();
-
-  useEffect(() => {
-    setDataJson(data);
-  }, [])
+  const [selectPertner, setSelectPertner] = useState();
+  const [selectCase, setSelectCase] = useState();
+  const [selectDeckList, setSelectDeckList] = useState([]);
 
   return (
     <Grid
       className="App"
       w="100vw"
       h="100vh"
-      gridTemplateRows="56px 1fr"
+      gridTemplateRows="56px minmax(0, 1fr)"
     >
-      <GridItem>
-        Header
+      <GridItem bg="main">
+        <Header
+          selectPertner={selectPertner}
+          setSelectPertner={setSelectPertner}
+          selectCase={selectCase}
+          setSelectCase={setSelectCase}
+          selectDeckList={selectDeckList}
+          setSelectDeckList={setSelectDeckList}
+        />
       </GridItem>
-      <GridItem>
+      <GridItem p="0.5rem 1.2rem 1rem">
         <Stack h="100%" flexDir="row">
-          <CardSelectorContainer />
-          <SelectedViewerContainer />
+          <CardSelectorContainer
+            selectPertner={selectPertner}
+            setSelectPertner={setSelectPertner}
+            selectCase={selectCase}
+            setSelectCase={setSelectCase}
+            selectDeckList={selectDeckList}
+            setSelectDeckList={setSelectDeckList}
+          />
+          <SelectedViewerContainer
+            selectPertner={selectPertner}
+            selectCase={selectCase}
+            selectDeckList={selectDeckList}
+            setSelectDeckList={setSelectDeckList}
+          />
         </Stack>
       </GridItem>
     </Grid>
