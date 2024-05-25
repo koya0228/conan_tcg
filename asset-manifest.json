@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.02a75ce6.css",
+    "main.js": "./static/js/main.a8c27653.js",
+    "static/js/453.251f070b.chunk.js": "./static/js/453.251f070b.chunk.js",
+    "static/media/bgImage_gray.png": "./static/media/bgImage_gray.30239670898fe40eb4a6.png",
+    "static/media/deckSpaceImage.png": "./static/media/deckSpaceImage.1d66221e9c900eaa0462.png",
+    "static/media/PT_CR_EV_card.jpg": "./static/media/PT_CR_EV_card.7899b1058457fddd686f.jpg",
+    "static/media/CS_card.jpg": "./static/media/CS_card.890b22c96cc80ad824cf.jpg",
+    "static/media/frameImage.png": "./static/media/frameImage.0bbff7e7d6d20a8f1bbc.png",
+    "static/media/logo.png": "./static/media/logo.cbda45d934c36dfbb15f.png",
+    "index.html": "./index.html",
+    "main.02a75ce6.css.map": "./static/css/main.02a75ce6.css.map",
+    "main.a8c27653.js.map": "./static/js/main.a8c27653.js.map",
+    "453.251f070b.chunk.js.map": "./static/js/453.251f070b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02a75ce6.css",
+    "static/js/main.a8c27653.js"
+  ]
+}
