@@ -23,7 +23,7 @@ export default function DeckViewer({ selectDeckList, setSelectDeckList }) {
         <CardsContainer>
           {selectDeckList.map((e, i) => (
             cardsData[e].type === "character" || cardsData[e].type === "event" ? (
-              <Image src={`./assets/image/card/${cardsData[e].img}`} />
+              <Image src={`./assets/image/card/${cardsData[e].img}`} key={i} />
             ) : (
               null
             )

@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Input } from "@chakra-ui/react";
 import CardSelector from "./CardSelectorTabs";
 import DeckImage from "./CardFormat";
 import { useContext } from "react";
@@ -10,7 +10,8 @@ export default function CardSelectorContainer({
   selectCase,
   setSelectCase,
   selectDeckList,
-  setSelectDeckList
+  setSelectDeckList,
+  setDeckName
 }) {
   return (
     <Box w="100%" h="100%" pr="8px" borderRight="2px gray solid">
@@ -21,6 +22,7 @@ export default function CardSelectorContainer({
         setSelectCase={setSelectCase}
         selectDeckList={selectDeckList}
         setSelectDeckList={setSelectDeckList}
+        setDeckName={setDeckName}
       />
     </Box>
   );

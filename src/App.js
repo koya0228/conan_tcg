@@ -14,6 +14,7 @@ function App() {
   const [selectPertner, setSelectPertner] = useState();
   const [selectCase, setSelectCase] = useState();
   const [selectDeckList, setSelectDeckList] = useState([]);
+  const [deckName, setDeckName] = useState("")
 
   return (
     <Grid
@@ -30,6 +31,7 @@ function App() {
           setSelectCase={setSelectCase}
           selectDeckList={selectDeckList}
           setSelectDeckList={setSelectDeckList}
+          deckName={deckName}
         />
       </GridItem>
       <GridItem p="0.5rem 1.2rem 1rem">
@@ -41,6 +43,7 @@ function App() {
             setSelectCase={setSelectCase}
             selectDeckList={selectDeckList}
             setSelectDeckList={setSelectDeckList}
+            setDeckName={setDeckName}
           />
           <SelectedViewerContainer
             selectPertner={selectPertner}

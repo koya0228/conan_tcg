@@ -10,7 +10,8 @@ export default function Header({
   selectCase,
   setSelectCase,
   selectDeckList,
-  setSelectDeckList
+  setSelectDeckList,
+  deckName
 }) {
   const cardsData = useContext(cardsDataJson);
   const { colorMode, toggleColorMode } = useColorMode();
@@ -34,7 +35,7 @@ export default function Header({
           pertnerIndex={selectPertner}
           caseIndex={selectCase}
           deckIndexes={selectDeckList}
-          deckName=""
+          deckName={deckName}
         />
         {/* <Button
           color="white1"

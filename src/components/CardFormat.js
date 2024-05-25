@@ -66,7 +66,6 @@ export default function DeckImage({cardJson, pertnerIndex, caseIndex, deckIndexe
         return rrr
       }
     })
-    console.log(colorGraphicBg);
     canvasApp.stage.addChild(bgImgSprite);
 
     const frameImgTexture = Texture.from(frameImage);

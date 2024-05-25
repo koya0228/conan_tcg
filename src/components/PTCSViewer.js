@@ -9,11 +9,7 @@ export default function PTCSViewer({ selectPertner, selectCase }) {
   const cardsData = useContext(cardsDataJson);
 
   useEffect(() => {
-    console.log(cardsData);
-    console.log(selectPertner);
-    if(selectPertner >= 0) {
-      console.log(cardsData[1])
-    }
+    
   }, [selectPertner])
 
   const textStyle = {
